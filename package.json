@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-jscs",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Ember CLI addon for broccoli-jscs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,10 +10,19 @@
     "type": "git",
     "url": "https://github.com/kellyselden/ember-cli-jscs.git"
   },
+  "keywords": [
+    "jscs",
+    "javascript",
+    "ember-addon"
+  ],
   "author": "Kelly Selden <kellyselden@gmail.com> (https://github.com/kellyselden)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kellyselden/ember-cli-jscs/issues"
   },
-  "homepage": "https://github.com/kellyselden/ember-cli-jscs"
+  "homepage": "https://github.com/kellyselden/ember-cli-jscs",
+  "dependencies": {
+    "broccoli-jscs": "0.0.7",
+    "broccoli-merge-trees": "^0.2.1"
+  }
 }
