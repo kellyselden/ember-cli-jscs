@@ -1,0 +1,19 @@
+{
+  "name": "ember-cli-jscs",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kellyselden/ember-cli-jscs.git"
+  },
+  "author": "Kelly Selden <kellyselden@gmail.com> (https://github.com/kellyselden)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kellyselden/ember-cli-jscs/issues"
+  },
+  "homepage": "https://github.com/kellyselden/ember-cli-jscs"
+}
