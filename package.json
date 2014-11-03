@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-jscs",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Ember CLI addon for broccoli-jscs",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,7 @@
   "dependencies": {
     "broccoli-jscs": "0.0.9",
     "broccoli-merge-trees": "^0.2.1",
+    "broccoli-static-compiler": "^0.2.1",
     "path": "^0.4.9"
   }
 }

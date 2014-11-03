@@ -1,6 +1,7 @@
 var JSCSFilter = require('broccoli-jscs');
 var path = require('path');
 var mergeTrees = require('broccoli-merge-trees');
+var pickFiles = require('broccoli-static-compiler');
 
 var processString = JSCSFilter.prototype.processString;
 JSCSFilter.prototype.processString = function(content, relativePath) {
@@ -46,7 +47,7 @@ module.exports = {
       app.registry.add('js', {
         name: 'broccoli-jscs',
         ext: 'js',
-        toTree: function(tree) {
+        toTree: function(tree, inputPath, outputPath, options) {
           var jscsTree = new JSCSFilter(tree, app.options.jscsOptions);
 
           if (!jscsTree.bypass && !jscsTree.disableTestGenerator) {
@@ -54,7 +55,10 @@ module.exports = {
 
             return mergeTrees([
               tree,
-              jscsTree
+              pickFiles(jscsTree, {
+                srcDir: '/',
+                destDir: outputPath + '/tests/'
+			  })
             ], { overwrite: true });
           }
 
