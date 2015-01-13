@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/kellyselden/ember-cli-jscs",
   "dependencies": {
-    "broccoli-jscs": "0.0.9",
+    "broccoli-jscs": "0.0.13",
     "broccoli-merge-trees": "^0.2.1",
     "broccoli-static-compiler": "^0.2.1",
     "path": "^0.4.9"
